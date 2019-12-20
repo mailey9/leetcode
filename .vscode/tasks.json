@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build leetcode-d",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-o",
+                "leetcode-d",
+                "main.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "build leetcode-o3d",
+            "command": "g++",
+            "args": [
+                "-O3",
+                "-g",
+                "-Wall",
+                "-o",
+                "leetcode-o3d",
+                "main.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
